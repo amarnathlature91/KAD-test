@@ -1,0 +1,17 @@
+.ct{
+    background-image: url('src\assets\images\carrerspage\crbg.jpg');
+}
+
+.over{
+    width: fit-content;
+    right: 0;
+    padding: 60px;
+	width: 60%;
+	height: fit-content;
+	background-color: #a3c1da;
+	position: absolute;
+	top: +60px;
+	bottom: -200px;
+	right: 0px;
+	border-radius: 5px;
+}

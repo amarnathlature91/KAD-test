@@ -1,0 +1,106 @@
+.image {
+	background-image: url('src\assets\images\homepage\headerBg.jpg');
+	height: 610px;
+}
+
+.header {
+	padding-top: 200px;
+	color: white;
+	font-size:80px;
+	text-align: center;
+	font-weight: bolder;
+	font-family: Abril Fatface;
+}
+
+.card-container {
+	margin-top: 40px;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: fit-content;
+	border-radius: 0px;
+}
+
+.card {
+	width: auto;
+	background-color: #fff;
+	position: relative;
+	z-index: 1;
+}
+
+.overlap {
+	padding: 60px;
+	width: 60%;
+	height: fit-content;
+	background-color: #a3c1da;
+	position: absolute;
+	top: +60px;
+	bottom: -200px;
+	right: 0px;
+	z-index: 1;
+	border-radius: 5px;
+}
+
+.fnt{
+	font-size: 60px;
+	font-weight: bold;
+}
+
+.card-title{
+	margin-top: 20px;
+	color: #4682b4
+}
+
+.card-text{
+	margin-top: 30px;
+	font-size: 20px;
+}
+
+.sr-card{
+	background-color: #fff;
+	width: 300px;
+	padding: 30px;
+	margin-top: 50px;
+	position: relative;
+}
+
+.sr-card-over{
+	background-color: #a3c1da;
+	position: absolute;
+	border-radius: 50%;
+	height: 70px;
+	width: 70px;
+	margin-top: -40px;
+	padding: 20px;
+	margin-left: 140px;
+}
+
+.stories-container{
+	background-image: url('src\assets\images\homepage\storiesBg.jpg');
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.sr-container {
+	background-image: url('src\assets\images\homepage\ourservicecBg.jpg');
+	height: 700px;
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+  }
+  
+  .srt-card {
+	padding: 50px;
+	width: 350px; 
+	height: 500px;
+	background-color: white;
+	padding: 10px;
+	text-align: center;
+	position: relative;
+  }
+  

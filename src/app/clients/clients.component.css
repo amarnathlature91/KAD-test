@@ -1,0 +1,17 @@
+.fn{
+    font-weight: lighter;
+}
+
+.carousl{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #a3c1da;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.templ{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+  
