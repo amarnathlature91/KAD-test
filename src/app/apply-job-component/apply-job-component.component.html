@@ -1,0 +1,34 @@
+<div style="padding: 2%;">
+    <h3 class="text-center headings">Apply For : </h3>
+    <h3 class="text-center headings">{{post.jobTitle}}</h3>
+    <div class="container">
+        <div mat-dialog-content>
+            <form (ngSubmit)="onSubmit()" #fileForm="ngForm" style="width: 100%;" enctype="multipart/form-data">
+
+                <label for="fullName">Full Name:</label><br>
+                <input style="width: 100%;" name="fullName" class="input" [(ngModel)]="fullName" required><br>
+
+                <label for="skills">Skills:</label><br>
+                <input style="width: 100%;" name="skills" class="input" [(ngModel)]="skills" required><br>
+
+                <label for="experience">Experience:</label><br>
+                <input style="width: 100%;" name="experience" class="input" [(ngModel)]="experience" required><br>
+
+                <label for="description">Description:</label><br>
+                <textarea style="width: 100%;" name="description" class="input" [(ngModel)]="description"
+                    required></textarea><br>
+
+                <label for="file">Resume/CV:</label><br>
+                <input type="file" style="width: 100%;" (change)="onFileSelected($event)" #fileInput required><br>
+
+                <div style="margin-top: 2%;">
+                    <button mat-raised-button color="accent" type="submit" style="margin: 1%;">Submit</button>
+                    <button mat-raised-button color="warn" type="reset" style="margin: 1%;">Reset</button>
+                </div>
+                <div *ngIf="isSending" class="mt-2">
+                    <mat-spinner style="height: 40px;width: 40px;"></mat-spinner>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

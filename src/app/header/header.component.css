@@ -1,13 +1,3 @@
-.navbar-nav>.active>a {
-    border-top: 4px solid #000000;
-    transition: border-top 0.2s ease;
-}
-
-.shd {
-    position: relative;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
 body,
 p,
 h1,
@@ -26,11 +16,24 @@ button,
 input,
 textarea {
     font-weight: 500;
-    color: purple;
+    color: #40320c;
 }
 
+.logo {
+    max-width: 150px;
+    height: 120px;
+}
+
+.shd {
+    position: relative;
+    background-image: url('src\assets\images\header\bg.jpg');
+    background-size: cover;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    height: auto;
+}
+
+
 .header {
-    color: #fff;
     padding: 20px;
     transition: transform 0.5s ease;
 }
@@ -39,7 +42,94 @@ textarea {
     transform: translateY(-100%);
 }
 
-.nav-link{
+.navbar-nav>.active>a {
+    border-top: 4px solid #40320c;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: border-top 0.2s ease;
+}
+
+.nav-link {
+    font-size: 1.5em;
+}
+
+.main {
+    font-weight: bolder;
     font-family: Abril Fatface;
-    font-size: 20px;
+}
+
+.nav-item {
+    margin: 1rem;
+}
+
+.nav-link:hover {
+    border-top: 4px solid #40320c;
+    transition: all 0.3s ease;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    align-items: end;
+    justify-content: center;
+}
+
+.grid-item-nav {
+    margin-top: 3%;
+}
+
+.grid-item-logo {
+    margin-bottom: 5%;
+}
+
+@media (max-width: 767px) {
+
+    .shd {
+        width: 90vw;
+        background-image: url('src\assets\images\header\bg.jpg');
+        background-size: cover;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .logo {
+        max-width: 50px;
+        height: 50px;
+    }
+
+    .header {
+        display: flex;
+        height: 10%;
+        width: 100%;
+    }
+
+
+    .grid {
+        display: flex;
+        gap: 0;
+    }
+
+    .grid-item-logo {
+        width: 40px;
+    }
+
+    .grid-item-nav {
+        width: 70vw;
+    }
+
+    .navbar-nav {
+        width: 10px;
+        display: flex;
+        justify-items: center;
+        flex-direction: row;
+    }
+
+    .nav-item {
+        width: 20px;
+        font-size: 10px;
+    }
+
+    .nav-link {
+        width: 20px;
+    }
+
 }

@@ -1,17 +1,36 @@
-.fn{
-    font-weight: lighter;
+.mh {
+    font-size: larger;
+    font-weight: bold;
 }
 
-.carousl{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    background-color: #a3c1da;
-    justify-content: center;
-    border-radius: 10px;
+.b-card-row-ct {
+    margin-top: -1%;
 }
 
-.templ{
-    margin-top: 50px;
-    margin-bottom: 30px;
+.b-card-row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2%;
+    margin-bottom: -4%;
 }
-  
+
+.b-card {
+    background-color: rgb(240, 248, 255);
+    border: rgb(234, 253, 238) 1px solid;
+    border-radius: 5px;
+    margin: 3%;
+    height: auto;
+    align-items: center;
+    padding: 2%;
+}
+
+.b-text {
+    text-align: justify;
+    margin: 2%;
+}
+
+.templ {
+    max-width: 150px;
+    max-height: 150px;
+}

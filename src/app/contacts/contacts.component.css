@@ -1,27 +1,32 @@
-.fabs{
+.fabs {
     width: 70px;
     height: 70px;
 }
 
-.icns{
-   font-size: 25px;
+.icns {
+    font-size: 25px;
 }
 
 .fade-up {
-    opacity: 0; 
-    transform: translateY(20px); 
+    opacity: 0;
+    transform: translateY(20px);
     animation: fadeUpAnimation 1s ease forwards;
 }
 
 .fade-up2 {
-    opacity: 0; 
-    transform: translateY(20px); 
+    opacity: 0;
+    transform: translateY(20px);
     animation: fadeUpAnimation 2s ease forwards;
 }
+
 .fade-up3 {
-    opacity: 0; 
-    transform: translateY(20px); 
+    opacity: 0;
+    transform: translateY(20px);
     animation: fadeUpAnimation 3s ease forwards;
+}
+
+.ctx {
+    margin: 5%;
 }
 
 @keyframes fadeUpAnimation {
@@ -29,8 +34,15 @@
         opacity: 0;
         transform: translateY(20px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.bgim {
+    background-image: url('src\assets\images\contactpage\contact.jpg');
+    background-size: cover;
+    background-position: center;
 }

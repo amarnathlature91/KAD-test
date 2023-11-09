@@ -1,165 +1,214 @@
 <div class="global-fade-in">
-    <div class="image">
-        <div class="container" style="width: 50%;">
-            <h2 class="header"><b>KAD e-Technologies Pvt Ltd.</b></h2>
+  <div class="video-background text-center">
+    <video autoplay muted loop id="video-bg">
+      <source src="assets\images\homepage\headerBg.mp4" type="video/mp4">
+    </video>
+    <div class="content">
+      <h2 class="header"><b>KAD e-Technologies Pvt Ltd.</b></h2>
+    </div>
+  </div>
+  <div class="container card-container">
+    <div class="card">
+      <div class="overlap">
+        <h1 class="fnt" style="color: white">
+          Empowering Companies with Precise Data Management
+        </h1>
+        <br />
+        <p class="overlap-text">
+          <b>
+            At Kadetech, we're not just a data management company; we are your
+            dedicated partner in unlocking the true potential of your data. With a
+            relentless commitment to excellence and a team of seasoned data
+            professionals, we offer a comprehensive suite of services designed to
+            help you navigate the complexities of data management.
+          </b>
+        </p>
+      </div>
+      <div class="card-content">
+        <img src="assets\images\homepage\HomeBg1.png" width="100%" height="auto" alt="banner" />
+      </div>
+    </div>
+  </div>
+  <div class="container text-center wck">
+    <h2 class="headings"><b>Why Choose KAD e-Tech?</b></h2>
+  </div>
+  <div class="container mt-5 mb-5">
+    <div class="row">
+      <div class="col-3">
+        <div class="text-center">
+          <img src="assets/images/homepage/icons/experience.png" class="wck-img" />
+          <h5><b class="bt">Unmatched Expertise</b></h5>
+          <p class="coltx" [ngbCollapse]="ue" id="ue">
+            Our team boasts an extensive background in data processing, data
+            reconciliation, and data annotation. We stay at the forefront of
+            industry advancements to ensure your data solutions are always
+            cutting-edge.
+          </p>
+          <button mat-button (click)="ue = !ue"><u class="rm">{{ ue ? 'Read More' : 'Read Less' }}</u></button>
         </div>
-    </div>
-    <div class="container container-fluid card-container" style="margin-bottom: -100px;">
-        <div class="card">
-            <div class="overlap">
-                <h1 class="fnt" style="color: white;"> Empowering Companies with Precise Data Management</h1><br>
-                <h6 style="color: white;">At Kadetech, we're not just a data management company; we are your dedicated
-                    partner in
-                    unlocking the true potential of your data. With a relentless commitment to excellence and a
-                    team of seasoned data professionals, we offer a comprehensive suite of services designed
-                    to help you navigate the complexities of data management.</h6>
-            </div>
-            <div class="card-content">
-                <img src="assets\images\homepage\homeBg1.jpg" width="800" height="auto" alt="banner">
-                <img src="assets\images\homepage\homeBg2.jpg" width="465" height="auto" alt="banner2">
-            </div>
+      </div>
+      <div class="col-3">
+        <div class="text-center">
+          <img src="assets/images/homepage/icons/precision.png" class="wck-img" />
+          <h5><b class="bt">Tailored Solutions</b></h5>
+          <p class="coltx" [ngbCollapse]="ts" id="ts">
+            Recognizing that every business has unique needs, we take a
+            personalized approach to craft solutions that align perfectly with
+            your requirements, ensuring optimal results.
+          </p>
+          <button mat-button (click)="ts = !ts"><u class="rm">{{ ts ? 'Read More' : 'Read Less'
+              }}</u></button>
         </div>
-    </div>
-    <div class="container text-center">
-        <h3><b>Why Choose KAD e-Tech?</b></h3>
-    </div>
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-3">
-                <div class="text-center">
-                    <img src="assets/images/homepage/icons/experience.png" style="margin: 10px;" height="80px"
-                        width="80px">
-                    <h5><b>Unmatched Expertise</b></h5>
-                    <p>
-                        Our team boasts an extensive background in data processing, data
-                        reconciliation, and data annotation. We stay at the forefront of industry advancements to
-                        ensure your data solutions are always cutting-edge.
-                    </p>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="text-center">
-                    <img src="assets/images/homepage/icons/precision.png" style="margin: 10px;" height="80px"
-                        width="80px">
-                    <h5><b>Tailored Solutions</b></h5>
-                    <p>
-                        Recognizing that every business has unique needs, we take a
-                        personalized approach to craft solutions that align perfectly with your requirements, ensuring
-                        optimal results.
-                    </p>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="text-center">
-                    <img src="assets/images/homepage/icons/intigrity.png" style="margin: 10px;" height="80px"
-                        width="80px">
-                    <h5><b>Precision and Integrity</b></h5>
-                    <p>
-                        Data accuracy and integrity are at the core of what we do. We
-                        understand that your decisions rely on trustworthy information, and we're committed to
-                        delivering just that.
-                    </p>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="text-center">
-                    <img src="assets/images/homepage/icons/client.png" style="margin: 10px;" height="80px" width="80px">
-                    <h5><b>Client-Centric Philosophy</b></h5>
-                    <p>
-                        Your success is our top priority. We work hand-in-hand with
-                        you, not just as a service provider, but as a strategic partner invested in your data-driven
-                        success.Discover the world of possibilities with Kadetech as we harness the power of data to
-                        drive your success.
-                    </p>
-                </div>
-            </div>
+      </div>
+      <div class="col-3">
+        <div class="text-center">
+          <img src="assets/images/homepage/icons/intigrity.png" class="wck-img" />
+          <h5><b class="bt">Precision and Integrity</b></h5>
+          <p class="coltx" [ngbCollapse]="pi" id="pi">
+            Data accuracy and integrity are at the core of what we do. We
+            understand that your decisions rely on trustworthy information, and
+            we're committed to delivering just that.
+          </p>
+          <button mat-button (click)="pi = !pi"><u class="rm">{{ pi ? 'Read More' : 'Read Less' }}</u></button>
         </div>
+      </div>
+      <div class="col-3">
+        <div class="text-center">
+          <img src="assets/images/homepage/icons/client.png" class="wck-img" />
+          <h5><b class="bt">Client-Centric Philosophy</b></h5>
+          <p class="coltx" [ngbCollapse]="cp" id="cp">
+            Your success is our top priority. We work hand-in-hand with you, not
+            just as a service provider, but as a strategic partner invested in
+            your data-driven success.Discover the world of possibilities with
+            Kadetech as we harness the power of data to drive your success.
+          </p>
+          <button mat-button (click)="cp = !cp"><u class="rm">{{ cp ? 'Read More' : 'Read Less' }}</u></button>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <div class="cantainer text-center">
-        <h3 class="text-center"><b>Our Services</b></h3>
+  <div class="sr-container">
+    <div class="text-center" style="padding: 3%;">
+      <h2 class="headings" style="color: white;"><b>Our Top Services</b></h2>
     </div>
-    <div class="sr-container">
-        <div class="srt-card">
-            <div class="sr-card-over">
-                <h4><b>1</b></h4>
-            </div>
-            <div class="card-body">
-                <h5 class="card-title" style="margin: 50px;"><b>Data Processing</b></h5>
-                <div class="container" style="width: 90%;">
-                    <p class="card-text">Seamlessly transform raw data into actionable insights. Our experts
-                        streamline and manipulate data to reveal meaningful patterns, enabling you to make
-                        informed
-                        decisions with confidence.</p>
-                </div>
-            </div>
-
+    <div class="cls">
+      <div class="srt-card">
+        <div class="circle">
+          <span class="number headings">1</span>
         </div>
-        <div class="srt-card">
-            <div class="sr-card-over">
-                <h4><b>2</b></h4>
-            </div>
-            <div class="card-body">
-                <h5 class="card-title" style="margin: 50px;"><b>Data Reconciliation</b></h5>
-                <div class="container">
-                    <p class="card-text" style="width: 90%;">Ensure accuracy and consistency across your datasets. Our meticulous
-                        reconciliation process identifies and resolves discrepancies, ensuring your data remains
-                        reliable and trustworthy.</p>
-                </div>
-
-            </div>
-        </div>
-        <div class="srt-card"> 
-            <div class="sr-card-over">
-                <h4><b>3</b></h4>
-            </div>
-            <div class="card-body">
-                <h5 class="card-title" style="margin: 50px;"><b>Data Annotation</b></h5>
-                <div class="container" style="width: 90%;">
-                    <p class="card-text">Empower AI and machine learning with accurately annotated data. Our
-                        skilled
-                        annotators label and tag data, enhancing your models' precision and enabling them to
-                        learn
-                        effectively from real-world examples.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <h3 class="text-center"><b>Stories by Clients Like You</b>
-    </h3>
-    <div class="stories-container">
-        <div class="container" style="width: 60%;">
-            <h5>Success-Driven Partnerships</h5>
-            <p>Organizations across a wide variety of industries have chosen KAD e-Technologies Pvt Ltd as their trusted
-                IT
-                partner. Our outstanding reputation is built from many years of providing world-class service, and
-                handling
-                each
-                technology need with care and precision. Learn more about who we’ve helped and what we can provide for
-                you.
+        <div class="card-body">
+          <h5 class="card-title headings text-center"><b>Data Processing</b></h5>
+          <div class="container" style="width: 99%;">
+            <p class="card-text body">
+              Seamlessly transform raw data into actionable insights. Our experts
+              streamline & manipulate data to reveal meaningful patterns,
+              enabling you to make informed decisions with confidence.
             </p>
-            <img src="assets\images\homepage\Logo_sudler.jpg">
-            <h3>Sudler & Hennessey</h3>
-            <h4>"Loyal Client"</h4>
-            <p>“KAD e-Technologies Pvt Ltd transformed our company by taking us mobile and implementing cloud solutions,
-                which
-                gave
-                our employees the flexibility they needed to work most efficiently.”</p>
-
-            <img src="assets\images\homepage\Logo_infomiez.jpg">
-            <h3>Infominez</h3>
-            <h4>"Greatly Improved Business"</h4>
-            <p>“Our company has confidently chosen KAD e-Technologies Pvt Ltd for our IT needs over many years. They
-                always
-                make
-                sure we’re ahead of the technology curve, and are also very enjoyable to work with.”</p>
-
-            <img src="assets\images\homepage\Logo_medForce.jpg">
-            <h3>MedForce</h3>
-            <h4>"Committed Long-Term Partners"</h4>
-            <p>“By really listening to our technology needs, KAD e-Technologies Pvt Ltd provided solutions that fit our
-                unique
-                business model. Their ongoing support and services have been instrumental to our company’s growth.”</p>
+          </div>
         </div>
+      </div>
+      <div class="srt-card">
+        <div class="circle">
+          <span class="number headings">2</span>
+        </div>
+        <div class=" card-body">
+          <h5 class="card-title headings text-center"><b>Data Reconciliation</b></h5>
+          <div class="container" style="width: 99%">
+            <p class="card-text body">
+              Ensure accuracy and consistency across your datasets. Our
+              reconciliation process identifies and resolves discrepancies,
+              ensuring your data remains reliable and trustworthy.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="srt-card">
+        <div class="circle">
+          <span class="number headings">3</span>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title headings text-center"><b>Data Annotation</b></h5>
+          <div class="container" style="width: 99%">
+            <p class="card-text body">
+              Empower AI and machine learning with accurately annotated data. Our
+              annotators label & tag data, enhancing model's
+              precision and enabling them to learn effectively from real-world
+              examples.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+
+  <div class="stories-container">
+    <div class="container text-center st-sub">
+      <h1 class="text-center headings st-sub-c">
+        <b>Stories by Clients Like You</b>
+      </h1>
+      <h3 class="headings" style="color: white;"><b>Success-Driven Partnerships</b></h3>
+      <p class="coltx" style="color: white;">
+        <b>
+          Organizations across a wide variety of industries have chosen KAD
+          e-Technologies Pvt Ltd as their trusted IT partner. Our outstanding
+          reputation is built from many years of providing world-class service,
+          and handling each technology need with care and precision. Learn more
+          about who we’ve helped and what we can provide for you.
+        </b>
+      </p>
+
+      <div class="container text-center" style="color: white;">
+        <ngb-carousel class="carousl">
+          <ng-template ngbSlide style=" color: white;">
+            <div>
+              <img class="tmp-img" src="assets\images\homepage\Logo_medForce.png" />
+            </div>
+            <h3 style="color: white;"><b class="mt-5">MedForce</b></h3>
+            <h4 style="color: white;">"Committed Long-Term Partners"</h4>
+            <p style="color: white;font-style: italic;">
+              “By really listening to our technology needs, KAD e-Technologies Pvt Ltd
+              provided solutions that fit our unique business model. Their ongoing
+              support and services have been instrumental to our company’s growth.”
+            </p>
+          </ng-template>
+          <ng-template ngbSlide>
+            <div>
+              <img class="tmp-img" src="assets\images\homepage\Logo_sudler.png" />
+            </div>
+            <h3 style="color: white;"><b>Sudler & Hennessey</b></h3>
+            <h4 style="color: white;">"Loyal Client"</h4>
+            <p style="color: white;font-style: italic;">
+              “KAD e-Technologies Pvt Ltd transformed our company by taking us mobile
+              and implementing cloud solutions, which gave our employees the
+              flexibility they needed to work most efficiently.”
+            </p>
+          </ng-template>
+
+          <ng-template ngbSlide>
+            <div>
+              <img class="tmp-img" src="assets\images\homepage\Logo_infomiez.png" />
+            </div>
+            <h3 style="color: white;"><b>Infominez</b></h3>
+            <h4 style="color: white;">"Greatly Improved Business"</h4>
+            <p style="color: white;font-style: italic;">
+              “Our company has confidently chosen KAD e-Technologies Pvt Ltd for our
+              IT needs over many years. They always make sure we’re ahead of the
+              technology curve, and are also very enjoyable to work with.”
+            </p>
+          </ng-template>
+        </ngb-carousel>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="socialcr">
+    <div class="container text-center">
+      <ngb-carousel class="scarousl mt-2">
+        <ng-template ngbSlide *ngFor="let g of galleries">
+          <img class="templ" [src]="host+g.postPhotoName" alt="Image">
+        </ng-template>
+      </ngb-carousel>
+    </div>
+  </div> -->
+
 </div>

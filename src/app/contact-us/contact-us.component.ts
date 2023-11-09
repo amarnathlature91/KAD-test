@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { ContatcServiceService } from '../contatc-service.service';
+import { ContactService } from '../app_services/contact.service';
 
 
 @Component({
@@ -11,7 +11,7 @@ import { ContatcServiceService } from '../contatc-service.service';
 export class ContactUsComponent {
   successMessage: string = '';
   sending: boolean = false;
-  constructor(private contactService: ContatcServiceService) { }
+  constructor(private contactService: ContactService) { }
 
   Submit(ContactForm: NgForm) {
     this.sending = true;

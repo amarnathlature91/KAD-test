@@ -1,0 +1,29 @@
+<div class="container headings">
+    <form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">
+        <h1 class="text-center"><b>Login</b></h1>
+        <p style="color: red;">
+            *Admins only
+        </p>
+        <div class=" mb-2" style="font-size: large;">
+            <label for="userName">UserName:</label><br>
+            <input type="text" id="userName" name="userName" class="input" ngModel required><br>
+        </div>
+
+        <div class="mb-2" style="font-size: large;">
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" class="input" ngModel required><br>
+        </div>
+
+        <div class="text-center">
+            <button mat-raised-button color="primary" type="submit">
+                <span style="color: white;">Submit</span>
+            </button>
+        </div>
+        <mat-spinner *ngIf="isLogging"></mat-spinner>
+    </form>
+</div>
+<div class="container text-center headings" style=" position: relative;">
+    <ngb-alert *ngIf=" errorMessage" style="position: absolute;" [dismissible]="true">
+        {{ errorMessage }}
+    </ngb-alert>
+</div>

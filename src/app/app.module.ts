@@ -16,11 +16,18 @@ import { FooterComponent } from './footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { MatDialogModule } from '@angular/material/dialog';
-import { FormsModule } from '@angular/forms';
-import {MatButtonModule} from '@angular/material/button';
-import {MatCardModule} from '@angular/material/card';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
-import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { HTTP_INTERCEPTORS, HttpClient, HttpClientModule } from '@angular/common/http';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { LoginComponent } from './login/login.component';
+import { LoginFormComponent } from './login-form/login-form.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { DeleteConfirmationDialogComponent } from './delete-confirmation-dialog/delete-confirmation-dialog.component';
+import { UpdatePostFormComponent } from './update-post-form/update-post-form.component';
+import { ApplyJobComponentComponent } from './apply-job-component/apply-job-component.component';
+import { TokenExpiredInterceptor } from './token-expired-interceptor';
 
 
 
@@ -36,7 +43,12 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
     ChatButtonComponent,
     FooterComponent,
     ContactUsComponent,
-
+    LoginComponent,
+    LoginFormComponent,
+    DashboardComponent,
+    DeleteConfirmationDialogComponent,
+    UpdatePostFormComponent,
+    ApplyJobComponentComponent
   ],
   imports: [
     BrowserModule,
@@ -48,10 +60,15 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
     MatButtonModule,
     MatCardModule,
     HttpClientModule,
-    MatProgressSpinnerModule
-
+    MatProgressSpinnerModule,
+    ReactiveFormsModule
   ],
-  providers: [HttpClientModule],
+  providers: [HttpClientModule,
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: TokenExpiredInterceptor,
+      multi: true
+    }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

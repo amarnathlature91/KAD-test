@@ -1,17 +1,42 @@
-.ct{
-    background-image: url('src\assets\images\carrerspage\crbg.jpg');
+.ct {
+	background-image: url('src\assets\images\carrerspage\crBg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
-.over{
-    width: fit-content;
-    right: 0;
-    padding: 60px;
-	width: 60%;
-	height: fit-content;
-	background-color: #a3c1da;
+.p-text {
+	font-size: 1.4rem;
+	padding-top: 10%;
+	padding-bottom: 10%;
+}
+
+.card {
+	padding: 3%;
+	height: auto;
+	width: 50vw;
+	margin: 2%;
+}
+
+.bullet {
+	height: 60%;
+	justify-content: center;
+	align-items: center;
+	display: grid;
+	color: black;
+	opacity: 0.5;
+}
+
+.apb {
+	width: fit-content;
+	background-color: #69b431;
 	position: absolute;
-	top: +60px;
-	bottom: -200px;
-	right: 0px;
-	border-radius: 5px;
+	right: 0;
+	top: 0;
+}
+
+.lgbtn {
+	position: absolute;
+	right: 0;
+	top: 0;
+
 }

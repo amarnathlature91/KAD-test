@@ -1,0 +1,30 @@
+<div style="padding: 5%;">
+    <h3 class="text-center headings">Update Post</h3>
+    <div class="container">
+        <div mat-dialog-content>
+            <form [formGroup]="postForm" (ngSubmit)="onSubmit()" style="width: 100%;">
+
+                <label for="jobTitle">Job Title:</label><br>
+                <input type="text" style="width: 100%;" class="input" formControlName="jobTitle"><br>
+
+                <label for="description">Description:</label><br>
+                <textarea style="width: 100%;" class="input" formControlName="description"></textarea><br>
+
+                <label for="location">Location:</label><br>
+                <input type="text" style="width: 100%;" class="input" formControlName="location"><br>
+
+                <label for="experience">Experience:</label><br>
+                <input type="text" style="width: 100%;" class="input" formControlName="experience"><br>
+
+                <label for="salary">Salary:</label><br>
+                <input type="text" style="width: 100%;" class="input" formControlName="salary"><br>
+
+                <div style="margin-top: 2%;">
+                    <button mat-raised-button color="accent" type=" submit" [disabled]="!postForm.valid"
+                        style="margin: 1%;">Submit</button>
+                    <button mat-raised-button color="warn" type="reset" style="margin: 1%;">Reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

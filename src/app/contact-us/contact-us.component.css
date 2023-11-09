@@ -1,12 +1,18 @@
 .success-message {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px;
-    margin-top: 10px;
-    border-radius: 4px;
-  }
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 4px;
+}
 
-  .mat-spinner {
-    width: 40px; 
-    height: 40px;
-  }
+.mat-spinner {
+  width: 40px;
+  height: 40px;
+}
+
+.input {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 8px;
+}

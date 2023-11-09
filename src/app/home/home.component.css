@@ -1,24 +1,46 @@
-.image {
-	background-image: url('src\assets\images\homepage\headerBg.jpg');
-	height: 610px;
+.video-background {
+	height: 90vh;
+	position: relative;
+	overflow: hidden;
+	z-index: -1;
+	justify-content: center;
+	align-items: center;
+}
+
+#video-bg {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: auto;
+	height: auto;
+	min-width: 100%;
+	min-height: 100%;
+	transform: translate(-50%, -50%);
 }
 
 .header {
-	padding-top: 200px;
 	color: white;
-	font-size:80px;
+	font-size: 5rem;
 	text-align: center;
 	font-weight: bolder;
-	font-family: Abril Fatface;
 }
 
+.content {
+	padding-top: 19%;
+	position: relative;
+	z-index: 1;
+	align-items: center;
+	justify-content: center;
+}
+
+
 .card-container {
-	margin-top: 40px;
+	margin-bottom: -50%;
+	margin-top: 5%;
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
-	width: fit-content;
-	border-radius: 0px;
+	width: 80vw;
 }
 
 .card {
@@ -29,78 +51,419 @@
 }
 
 .overlap {
-	padding: 60px;
+	padding: 5%;
 	width: 60%;
 	height: fit-content;
 	background-color: #a3c1da;
 	position: absolute;
-	top: +60px;
-	bottom: -200px;
-	right: 0px;
+	top: +20%;
+	bottom: -60%;
+	right: 0;
 	z-index: 1;
-	border-radius: 5px;
+	border-radius: 1%;
 }
 
-.fnt{
-	font-size: 60px;
+.overlap-text {
+	color: white;
+	font-size: 1.2rem;
+	text-align: justify;
+	font-family: 'monteserride classic', sans-serif;
+}
+
+.fnt {
+	font-size: 4rem;
 	font-weight: bold;
 }
 
-.card-title{
-	margin-top: 20px;
-	color: #4682b4
+.wck {
+	margin-top: 54%;
 }
 
-.card-text{
-	margin-top: 30px;
-	font-size: 20px;
+.wck-img {
+	margin: 5%;
+	height: 40%;
+	width: 40%;
 }
 
-.sr-card{
-	background-color: #fff;
-	width: 300px;
-	padding: 30px;
-	margin-top: 50px;
-	position: relative;
+
+.bt {
+	font-family: 'League Spartan', sans-serif;
 }
 
-.sr-card-over{
-	background-color: #a3c1da;
-	position: absolute;
-	border-radius: 50%;
-	height: 70px;
-	width: 70px;
-	margin-top: -40px;
-	padding: 20px;
-	margin-left: 140px;
+.coltx {
+	text-align: justify;
+	font-family: 'monteserride classic', sans-serif;
+	font-size: larger;
 }
-
-.stories-container{
-	background-image: url('src\assets\images\homepage\storiesBg.jpg');
-	text-align: center;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
 
 .sr-container {
 	background-image: url('src\assets\images\homepage\ourservicecBg.jpg');
-	height: 700px;
+	background-size: cover;
+	background-position: center;
+	height: 90vh;
+	align-items: center;
+	justify-content: center;
+}
+
+.cls {
+	justify-content: center;
+	align-items: center;
 	display: flex;
-	gap: 10px;
+	gap: 10vw;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-  }
-  
-  .srt-card {
-	padding: 50px;
-	width: 350px; 
-	height: 500px;
+
+}
+
+
+.circle {
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	top: -9%;
+	left: 35%;
+	background-color: #a3c1da;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.number {
+	z-index: 1;
+}
+
+.card-title {
+	margin-top: 15%;
+	margin-bottom: 5%;
+	color: #4682b4;
+	font-size: 1.6rem;
+}
+
+.card-text {
+	margin-top: 1%;
+	font-size: 1.3rem;
+}
+
+.srt-card {
+	width: 20vw;
+	height: 55vh;
 	background-color: white;
-	padding: 10px;
-	text-align: center;
+	padding: 1%;
 	position: relative;
-  }
-  
+	border-radius: 2%;
+	text-align: justify;
+}
+
+.stories-container {
+	background-image: url('src\assets\images\homepage\storiesBg.jpg');
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	background-size: cover;
+	background-position: center;
+}
+
+.st-sub {
+	width: 90%;
+	font-size: larger;
+}
+
+.st-sub-c {
+	padding-top: 4%;
+	padding-bottom: 2%;
+	color: white;
+}
+
+.tmp-img {
+	max-height: 20%;
+	max-width: 20%;
+}
+
+.carousl {
+	justify-content: center;
+	align-items: center;
+	font-size: large;
+	height: 55vh;
+}
+
+
+.socialcr {
+	background-image: url('src\assets\images\homepage\socialBg.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 90vh;
+	padding: 5%;
+}
+
+.templ {
+	border-radius: 5px;
+	height: 500px;
+	width: auto;
+}
+
+.ngc {
+	margin-top: 10%;
+	justify-content: center;
+	align-items: center;
+}
+
+.scarousl {
+	justify-content: center;
+	align-items: center;
+	font-size: large;
+	height: 55vh;
+
+	.carousel-indicators {
+		display: none;
+	}
+}
+
+
+
+
+
+/* for mobile screen */
+@media only screen and (max-width: 767px) {
+
+	body {
+		width: 100vw;
+	}
+
+	.video-background {
+		height: 24vh;
+		position: relative;
+		overflow: hidden;
+		z-index: -1;
+		justify-content: center;
+		align-items: center;
+		background-position: center;
+		background-size: cover;
+	}
+
+	#video-bg {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: auto;
+		height: auto;
+		min-width: 100%;
+		min-height: 100%;
+		transform: translate(-50%, -50%);
+		background-position: center;
+		background-size: cover;
+	}
+
+	.header {
+		color: white;
+		font-size: 1.4rem;
+		text-align: center;
+		font-weight: bolder;
+	}
+
+	.content {
+		padding-top: 19%;
+		position: relative;
+		z-index: 1;
+		align-items: center;
+		justify-content: center;
+	}
+
+
+	.card-container {
+		margin-top: 5%;
+		justify-content: center;
+		align-items: center;
+		height: 58vh;
+		width: 90vw;
+	}
+
+	.card {
+		width: auto;
+		background-color: #fff;
+		position: relative;
+		z-index: 1;
+	}
+
+	.overlap {
+		padding: 3%;
+		width: 70%;
+		height: fit-content;
+		background-color: #a3c1da;
+		position: absolute;
+		top: +20%;
+		bottom: -60%;
+		right: 0;
+		z-index: 1;
+		border-radius: 1%;
+	}
+
+	.overlap-text {
+		color: white;
+		font-size: 0.5rem;
+		text-align: justify;
+		font-family: 'monteserride classic', sans-serif;
+	}
+
+	.fnt {
+		font-size: 1.2rem;
+		font-weight: bold;
+	}
+
+	.wck {
+		margin-top: 5%;
+	}
+
+	.wck-img {
+		margin: 5%;
+		height: 40%;
+		width: 40%;
+	}
+
+
+	.bt {
+		font-family: 'League Spartan', sans-serif;
+		font-size: 0.7rem;
+	}
+
+	.coltx {
+		text-align: justify;
+		font-family: 'monteserride classic', sans-serif;
+		font-size: 0.5rem;
+	}
+
+	.rm {
+		font-size: 0.7rem;
+	}
+
+	.sr-container {
+		background-image: url('src\assets\images\homepage\ourservicecBg.jpg');
+		background-size: cover;
+		background-position: center;
+		height: auto;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.cls {
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		gap: 10px;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+
+	}
+
+
+	.circle {
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		top: -15px;
+		left: 35%;
+		background-color: #a3c1da;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: #fff;
+		font-size: 0.5rem;
+	}
+
+	.number {
+		z-index: 1;
+		font-size: 0.7rem;
+	}
+
+	.srt-card {
+		width: 100px;
+		height: 180px;
+		background-color: white;
+		padding: 1px;
+		position: relative;
+		border-radius: 3px;
+		text-align: justify;
+		margin-bottom: 10%;
+	}
+
+	.card-title {
+		margin-top: 20%;
+		margin-bottom: 2%;
+		color: #4682b4;
+		font-size: 0.6rem;
+	}
+
+	.card-text {
+		font-size: 0.5rem;
+	}
+
+
+	.stories-container {
+		background-image: url('src\assets\images\homepage\storiesBg.jpg');
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		background-size: cover;
+		background-position: center;
+	}
+
+	.st-sub {
+		width: 99%;
+		font-size: larger;
+	}
+
+	.st-sub-c {
+		padding-top: 7%;
+		padding-bottom: 2%;
+		color: white;
+	}
+
+	.coltx {
+		font-size: 0.8rem;
+	}
+
+	.tmp-img {
+		max-height: 50%;
+		max-width: 50%;
+	}
+
+	.carousl {
+		justify-content: center;
+		align-items: center;
+		font-size: large;
+		height: 45vh;
+	}
+
+	.socialcr {
+		background-image: url('src\assets\images\homepage\socialBg.jpg');
+		background-size: cover;
+		background-position: center;
+		height: auto;
+		padding: 5%;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.templ {
+		border-radius: 5px;
+		height: auto;
+		width: 100%;
+	}
+
+	.scarousl {
+		justify-content: center;
+		align-items: center;
+		height: auto;
+
+		.carousel-indicators {
+			display: none;
+		}
+	}
+
+}

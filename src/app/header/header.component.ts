@@ -1,4 +1,5 @@
-import { Component, HostListener } from '@angular/core';
+import { animate, state, style, transition, trigger } from '@angular/animations';
+import { Component, HostBinding, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -10,8 +11,7 @@ export class HeaderComponent {
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    // Check the scroll position
-    if (window.scrollY > 50) {
+    if (window.scrollY > 100) {
       this.isScrolled = true;
     } else {
       this.isScrolled = false;

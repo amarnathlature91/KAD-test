@@ -1,145 +1,119 @@
 <div class="global-fade-in">
-  <div class="container container-sm fn mt-5">
-    <h1><b>About KAD e-Tech</b></h1>
-    <p>
-      KAD e-Tech, an IT service providing company based in India with major focus on Data Entry, Data Processing and
-      Data Reconciliation. It possesses years of experience and has completed number of different data related projects.
-    </p>
-    <p>
-      Worldwide organizations, companies and people rely upon its intellectually headed services with excellent quality,
-      accuracy, prompt response and affordability offered on data entry and back office projects.
-    </p>
-    <p>
-      KAD e-Tech is a one stop solution for high quality, time bound and cost-effective data entry services like Data
-      Conversion, Data Entry, Forms Processing, Image Tagging, Data Capture, Financial Data Entries, Word Processing,
-      Electronic Document Management & Database Management facilities in India.
-    </p>
+  <div class="container mt-5">
+    <h1><b class="headings">About KAD e-Tech</b></h1>
+    <div class="body" style="font-size: larger;">
+      <p>
+        KAD e-Tech, an IT service providing company based in India with major focus on Data Entry, Data Processing and
+        Data Reconciliation. It possesses years of experience and has completed number of different data related
+        projects.
+      </p>
+      <p>
+        Since it’s formation in the year 2010, KAD e-Tech has emerged as one of most innovative data services and
+        back
+        office support providing company in Indore, INDIA. Being headquartered in the center of India, enables us to
+        deal effectively with our clients and allows us to provide them with solutions that are target specific.
+      </p>
+      <p>
+        KAD e-Tech is a one stop solution for high quality, time bound and cost-effective data entry services like Data
+        Conversion, Data Entry, Forms Processing, Image Tagging, Data Capture, Financial Data Entries, Word Processing,
+        Electronic Document Management & Database Management facilities in India.
+      </p>
+    </div>
   </div>
-  <div class="carousl">
+  <div class="carousl" style="font-size: larger;">
     <div class="container text-center">
       <ngb-carousel *ngIf="photos">
         <ng-template class="templ" ngbSlide *ngFor="let photo of photos">
-          <img class="templ" [src]="photo.url" alt="{{ photo.name }}" style="max-height: 300px;">
-          <h3 style="color: white">{{ photo.name }}</h3>
-          <h6 style="color: white;margin-bottom: 50px;">{{ photo.description }}</h6>
+          <img class="templ" [src]="photo.url" alt="{{ photo.name }}" class="bmi mt-5">
+          <h3 class="headings" style=" color: white"><b>{{ photo.name}}</b></h3>
+          <h6 class="body" style="color: white;margin-bottom: 50px;">{{ photo.description }}</h6>
         </ng-template>
       </ngb-carousel>
     </div>
   </div>
-  <div class="text-center">
-    <div class="row bf" style="width: 100%;padding: 20px;">
-      <div class="col">
-        <img src="assets\images\aboutpage\icons\experience.png" height="80px" width="80px">
-        <h6><b>9+ Years in Business</b></h6>
+  <div class="container text-center mt-5 mb-5" style="font-size: larger;">
+    <div class="row bt-rw">
+      <div class="col bt-div">
+        <img src="assets\images\aboutpage\icons\experience.png" class="bt-img">
+        <h6 class="headings bt-tx"><b>9+ Years in Business</b></h6>
       </div>
-      <div class="col">
-        <img src="assets\images\aboutpage\icons\resource.png" height="80px" width="80px">
-        <h6><b>30+ Resource Strength</b></h6>
+      <div class="col bt-div">
+        <img src="assets\images\aboutpage\icons\resource.png" class="bt-img">
+        <h6 class="headings bt-tx"><b>30+ Resource Strength</b></h6>
       </div>
-      <div class="col">
-        <img src="assets\images\aboutpage\icons\clients.png" height="80px" width="80px">
-        <h6><b>20+ Happy Clients</b></h6>
+      <div class="col bt-div">
+        <img src="assets\images\aboutpage\icons\clients.png" class="bt-img">
+        <h6 class="headings bt-tx"><b>24/7 Availability</b></h6>
       </div>
-      <div class="col">
-        <img src="assets\images\aboutpage\icons\projectdelivery.png" height="80px" width="80px">
-        <h6><b>99.9% Project Delivery Accuracy</b></h6>
+    </div>
+    <div class="row bt-rw">
+      <div class="col bt-div">
+        <img src="assets\images\aboutpage\icons\projectdelivery.png" class="bt-img">
+        <h6 class="headings bt-tx"><b>99.9% Project Delivery Accuracy</b></h6>
       </div>
-      <div class="col">
-        <img src="assets\images\aboutpage\icons\dataquality.png" height="80px" width="80px">
-        <h6><b>99% Data Quality</b></h6>
+      <div class="col bt-div">
+        <img src="assets\images\aboutpage\icons\dataquality.png" class="bt-img">
+        <h6 class="headings bt-tx"><b>99% Data Quality</b></h6>
       </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col-8 mt-5">
-      <div class="container" style="width: 70%;">
-        <h3><b>KAD e-Tech Brief Description</b></h3>
-        <p>
-          Since it’s formation in the year 2010, KAD e-Tech has emerged as one of most innovative data services and back
-          office support providing company in Indore, INDIA. Being headquartered in the center of India, enables us to
-          deal effectively with our clients and allows us to provide them with solutions that are target specific.
-        </p>
-        <p>
-          Our internal culture is guided by a set of core values that inform every decision we make, including how we
-          interact with our client partners. Aligning ourselves with Business Partners, who appreciate our values and
-          hold themselves to similar standards, is extremely important to us.
-          We work for the greater benefit of our clients and partners.
-          We offer solution that can’t be overlooked.
-        </p>
-        <h6>You can describe KAD e-Tech as :</h6>
-        <h6>We are innovative.</h6>
-        <h6>We are progressive.</h6>
-        <h6>We are passionate.</h6>
-      </div>
+
+  <div class="container-fluid">
+    <div class="text-center">
+      <h2 class="headings"><b>Our Philosophy</b></h2>
     </div>
-    <div class="col-4 mt-5">
-      <img src="assets\images\Logo.jpg" height="300px" width="auto">
-    </div>
-  </div>
-  <div class="text-center">
-    <div class="row" style="margin: 30px;">
-      <h3><b>Our Philosophy</b></h3>
-      <div class="col-4 mt-5">
-        <div class="phcard">
-          <img src="assets\images\aboutpage\icons\mission.png" height="80px" width="80px" style="margin: 10px;">
-          <h4><b>Misson</b></h4>
-          <div class="text-start">
-            <ul>
-              <li>
-                To provide high quality services that combine creativity with valuable pricing, while establishing a
-                successful relationship with our customers. To be the most passionately referred consultant in the Data
-                services industry, while striving to provide our clients with the optimum service they deserve.
-              </li>
-              <li>Service is the heart of our business.</li>
-              <li>To assure our clients of their satisfaction by addressing their needs and requirements in a timely
-                manner.</li>
-              <li>Create a client friendly environment to deliver quality services with data security & Privacy.</li>
-            </ul>
+    <div class="mission-ct">
+      <div class="row">
+        <div class="col-md-6 mt-5 mb-5">
+        </div>
+        <div class="col-6 mt-5 mb-5">
+          <div class="cold">
+            <h3 class="headings text-center" style="color: white;"><b>Misson</b></h3>
+            <div class="container body ph-tex" style="width: 50%;">
+              <p style="color: white;">
+                We're dedicated to delivering high-quality, creatively priced services while fostering strong client
+                relationships in the Data services industry. At our core, service excellence is paramount—we prioritize
+                meeting client needs promptly and ensuring their satisfaction while maintaining a client-friendly
+                environment committed to delivering top-quality services with a focus on data security and privacy.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-4 mt-5">
-        <div class="phcard">
-          <img src="assets\images\aboutpage\icons\vision.png" height="80px" width="80px" style="margin: 10px;">
-          <h4><b>Vision</b></h4>
-          <div class="text-start">
-            <ul>
-              <li>
-                We have a vision to become a major, diversified, transnational, integrated data service company, with
-                leadership and a strong business conscience to play a critical role in data services advancements.
-                Ethics create more values for KAD e-Tech.
-              </li>
-              <li>To become a highly respected company in area of data services.
-              </li>
-              <li>To become one of the most reliable and prestigious player in the data service industry through our
-                “Commitment in Total Customer Satisfaction.”
-              </li>
-            </ul>
+    </div>
+    <div class="vision-ct">
+      <div class="row">
+        <div class="col-md-6 mt-5 mb-5">
+          <div class="cold">
+            <h3 class="headings text-center" style="color: white;"><b>Vision</b></h3>
+            <div class="container body ph-tex" style="width: 50%;">
+              <p style="color: white;">
+                Our vision is to emerge as a leading global data service company, committed to ethical practices and
+                technological advancements, fostering greater value for KAD e-Tech. We aspire to earn deep respect
+                within
+                the data services sector, striving to be a trusted and esteemed player by prioritizing 'Total Customer
+                Satisfaction' at our core.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-4 mt-5">
-        <div class="phcard">
-          <img src="assets\images\aboutpage\icons\values.png" height="80px" width="80px" style="margin: 10px;">
-          <h4><b>Values</b></h4>
-          <div class="text-start">
-            <ul>
-              <li>
-                Our values inform everything we do. From the type of people we hire to the work we take on. Our Vision
-                Points are at the heart of our unique company culture, defining and uniting us as a group.
-              </li>
-              <li>
-                We value intellectual modesty and dislike false pride and arrogance and we seek opportunities from
-                everywhere.
-              </li>
-              <li>We value a deep sense of responsibility and self-discipline, to meet and surpass on commitments made
-                Nurturing active curiosity - to question, share and improve</li>
-              
-              <li>We will treat others with dignity, sensitivity and honor
-                Going beyond the individual encouraging boundaryless behavior
-                Anticipating and meeting relevant and emerging needs of the society.
-              </li>
-            </ul>
+    </div>
+    <div class="values-ct">
+      <div class="row">
+        <div class="col-md-6 mt-5 mb-5">
+        </div>
+        <div class="col-md-6 mt-5 mb-5">
+          <div class="cold">
+            <h3 class="headings text-center" style="color: white;"><b>Values</b></h3>
+            <div class="container body ph-tex" style="width: 50%;">
+              <p style="color: white;">
+                Our values drive our company, influencing our culture, team unity, and approach to work. Guided by our
+                Vision Points, we prioritize intellectual modesty, seizing diverse opportunities, nurturing
+                responsibility, curiosity, and commitment. We treat everyone with dignity, encourage boundaryless
+                behavior, and actively meet society's evolving needs.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -150,5 +124,98 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <div class="row mt-4">
+    <div class="col-4 ">
+      <img src="assets\images\aboutpage\icons\mission.png" height="80px" width="80px" style="margin: 10px;">
+      <h4 class="headings"><b>Misson</b></h4>
+      <div class="text-start body ph-tex">
+        <ul>
+          <li>
+            To provide high quality services that combine creativity with valuable pricing, while establishing a
+            successful relationship with our customers. To be the most passionately referred consultant in the
+            Data
+            services industry, while striving to provide our clients with the optimum service they deserve.
+          </li>
+          <li>Service is the heart of our business.</li>
+          <li>To assure our clients of their satisfaction by addressing their needs and requirements in a timely
+            manner.</li>
+          <li>Create a client friendly environment to deliver quality services with data security & Privacy.
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-4 ">
+      <img src="assets\images\aboutpage\icons\vision.png" height="80px" width="80px" style="margin: 10px;">
+      <h4 class="headings"><b>Vision</b></h4>
+      <div class="text-start body ph-tex">
+        <ul>
+          <li>
+            We have a vision to become a major, diversified, transnational, integrated data service company,
+            with
+            leadership and a strong business conscience to play a critical role in data services advancements.
+            Ethics create more values for KAD e-Tech.
+          </li>
+          <li>To become a highly respected company in area of data services.
+          </li>
+          <li>To become one of the most reliable and prestigious player in the data service industry through our
+            “Commitment in Total Customer Satisfaction.”
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-4 ">
+      <img src="assets\images\aboutpage\icons\values.png" height="80px" width="80px" style="margin: 10px;">
+      <h4 class="headings"><b>Values</b></h4>
+      <div class="text-start body ph-tex">
+        <ul>
+          <li>
+            Our values inform everything we do. From the type of people we hire to the work we take on. Our
+            Vision
+            Points are at the heart of our unique company culture, defining and uniting us as a group.
+          </li>
+          <li>
+            We value intellectual modesty and dislike false pride and arrogance and we seek opportunities from
+            everywhere.
+          </li>
+          <li>We value a deep sense of responsibility and self-discipline, to meet and surpass on commitments
+            made
+            Nurturing active curiosity - to question, share and improve</li>
+
+          <li>We will treat others with dignity, sensitivity and honor
+            Going beyond the individual encouraging boundaryless behavior
+            Anticipating and meeting relevant and emerging needs of the society.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div> -->
 
 </div>

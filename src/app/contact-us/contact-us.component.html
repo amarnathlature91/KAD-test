@@ -1,34 +1,41 @@
 <div class="global-fade-in">
-    <div class="container" style="padding: 5%;">
-        <h1 class="text-center">Contact Us</h1>
-
+    <div class="headings">
         <form #contactForm="ngForm" (ngSubmit)="Submit(contactForm)">
             <label for="name">Name:</label><br>
-            <input type="text" id="name" style="width: 100%;" name="name" ngModel required><br>
+            <input type="text" id="name" style="width: 100%;" name="name" class="input" ngModel required><br>
 
             <label for="designation">Designation:</label><br>
-            <input type="text" id="designation" style="width: 100%;" name="designation" ngModel required><br>
+            <input type="text" id="designation" style="width: 100%;" name="designation" class="input" ngModel
+                required><br>
 
             <label for="companyName">Company Name:</label><br>
-            <input type="text" id="companyName" style="width: 100%;" name="companyName" ngModel required><br>
+            <input type="text" id="companyName" style="width: 100%;" name="companyName" class="input" ngModel
+                required><br>
 
             <label for="phone">Phone:</label><br>
-            <input type="number" id="phone" style="width: 100%;" name="phone" ngModel required><br>
+            <input type="number" id="phone" style="width: 100%;" name="phone" class="input" ngModel required><br>
 
             <label for="email">Email:</label><br>
-            <input type="email" id="email" style="width: 100%;" name="email" ngModel required><br>
+            <input type="email" id="email" style="width: 100%;" name="email" class="input" ngModel required><br>
 
-            <label for="address">Address:</label><br>
-            <textarea id="address" style="width: 100%;" name="address" rows="4" ngModel required></textarea><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" style="width: 100%;" name="message" class="input" rows="4" ngModel required>
+            </textarea><br>
 
             <button mat-raised-button color="primary" type="submit"><span style="color: white;">Submit</span>
             </button>
             <div *ngIf="sending" class="mt-2">
-                <mat-spinner  style="height: 40px;width: 40px;"></mat-spinner>
+                <mat-spinner style="height: 40px;width: 40px;"></mat-spinner>
             </div>
             <div *ngIf="successMessage" class="success-message">
                 {{ successMessage }}
             </div>
         </form>
+        <p class="body" style="text-align: justify;font-size: small;margin: 1%;">
+            Your data's potential is our passion. Reach out to us,
+            and let's start the
+            conversation that
+            could redefine your data landscape. We look forward to hearing from you.
+        </p>
     </div>
 </div>

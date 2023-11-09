@@ -1,28 +1,64 @@
 <div class="global-fade-in">
-    <div class="container mt-5">
-        <h1><b>Join Our Team: Ignite Your Career</b></h1>
+    <div class="container mt-5 mb-5" style="position: relative;">
+        <h1><b class="headings">Join Our Team: Ignite Your Career</b></h1>
+        <div class=" lgbtn">
+            <a href="/login" *ngIf="!isLoggedin()" mat-raised-button style="margin: 20px;">Login</a>
+            <a href="/dashboard" *ngIf="isLoggedin()" mat-stroked-button color="primary"
+                style="margin: 20px;">Dashboard</a>
+            <button *ngIf="isLoggedin()" mat-raised-button color="warn" style="margin: 20px;"
+                (click)="logout()">Logout</button>
+        </div>
     </div>
     <div class="ct">
         <div class="row" style="margin: 10px;padding: 20px;">
             <div class="col-6">
-
             </div>
-            <div class="col-6" style="padding: 50px;">
-                <p style="font-size: 25px;margin-top: 170px;">
-                    Are you passionate about data management and driven by innovation? KAD e-tech welcomes
-                    individuals who are eager to contribute to our mission of redefining data management in a
-                    dynamic and challenging landscape.
+            <div class="col-6 body p-text" style="text-align: justify;">
+                <p>
+                    <b style="color: white;">
+                        Are you passionate about data management and driven by innovation? KAD e-tech welcomes
+                        individuals who are eager to contribute to our mission of redefining data management in a
+                        dynamic and challenging landscape.
+                    </b>
                 </p>
-                <p style="font-size: 25px;">
-                    We're always on the lookout for exceptional talent who can add their unique perspectives
-                    and expertise to our team. Explore our current job openings and take the first step toward an
-                    exciting career journey with us. Your potential knows no bounds at KAD e-tech.
+                <p>
+                    <b style="color: white;">
+                        We're always on the lookout for exceptional talent who can add their unique perspectives
+                        and expertise to our team. Explore our current job openings and take the first step toward an
+                        exciting career journey with us. Your potential knows no bounds at KAD e-tech.
+                    </b>
+
                 </p>
             </div>
-
-
         </div>
     </div>
 
-
+    <div class="container mt-5 mb-3">
+        <h2><b class="headings">Current Openings</b></h2>
+        <div style="display:grid;justify-content: center;">
+            <div class="row" *ngFor="let p of posts">
+                <div class="card">
+                    <div style="position: relative;">
+                        <h4 class="headings" style="width: auto;"><b>{{p.jobTitle}}</b></h4>
+                        <button mat-raised-button class="apb" (click)="openApply(p.jobTitle)">Apply</button>
+                    </div>
+                    <p class="body">{{p.description}}</p>
+                    <div class="row">
+                        <div class="col-md-3 bullet body">
+                            <i class="fa fa-map-marker"><b>{{' '+p.location}}</b></i>
+                        </div>
+                        <div class="col-md-3 bullet">
+                            <i class="fas fa-money-bill"><b>{{' '+p.salary}}</b></i>
+                        </div>
+                        <div class="col-md-3 bullet">
+                            <i class="fas fa-briefcase"><b>{{' '+p.experience}}</b></i>
+                        </div>
+                        <div class="col-md-3 bullet">
+                            <i class="far fa-calendar-alt"><b> {{ p.dateLastModified | date }}</b></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

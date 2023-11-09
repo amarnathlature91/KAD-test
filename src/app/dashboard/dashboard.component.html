@@ -1,0 +1,96 @@
+<div class="container" style="position: relative">
+    <div class="lgbtn">
+        <button *ngIf="isLoggedin()" mat-raised-button color="warn" style="margin: 20px;"
+            (click)="logout()">Logout</button>
+    </div>
+    <div class="row  mt-5 mb-5">
+        <div class="col-md-6">
+            <h2 class="text-center headings">Posts</h2>
+            <div class=" container">
+                <div *ngIf="deleting" class="mt-2">
+                    <mat-spinner style="height: 40px;width: 40px;"></mat-spinner>
+                </div>
+                <div class="row" *ngFor="let p of posts" style="width: 100%;">
+                    <div class="card mt-5" style="width: 100%;padding: 2%;">
+                        <div style="position: relative;">
+                            <h4 class="headings" style="width: auto;"><b>{{p.jobTitle}}</b></h4>
+                            <div class="apb">
+                                <button mat-raised-button warn color="primary" (click)="openUpdatePost(p)">
+                                    <span class="apb-tx">Update</span>
+                                </button>&nbsp;
+                                <button mat-raised-button color="warn" (click)="openDeleteConfirmation(p.postId)"><span
+                                        class="apb-tx">Delete</span>
+                                </button>
+                            </div>
+
+                        </div>
+                        <p class="body">{{p.description}}</p>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <i class="fa fa-map-marker"><b>{{' '+p.location}}</b></i>
+                            </div>
+                            <div class="col-md-3">
+                                <i class="fas fa-money-bill"><b>{{' '+p.salary}}</b></i>
+                            </div>
+                            <div class="col-md-3">
+                                <i class="fas fa-briefcase"><b>{{' '+p.experience}}</b></i>
+                            </div>
+                            <div class="col-md-3">
+                                <i class="far fa-calendar-alt"><b> {{ p.dateLastModified | date }}</b></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 headings">
+            <h2 class="text-center ">Add Post</h2>
+            <div class="container" style="width: 50%;">
+                <div mat-dialog-content>
+                    <form [formGroup]="postForm" (ngSubmit)="onSubmit()" style="width: 100%;">
+                        <label for="jobTitle">Job Title:</label><br>
+                        <input type="text" style="width: 100%;" class="input" formControlName="jobTitle"><br>
+
+                        <label for="description">Description:</label><br>
+                        <textarea style="width: 100%;" class="input" formControlName="description"></textarea><br>
+
+                        <label for="location">Location:</label><br>
+                        <input type="text" style="width: 100%;" class="input" formControlName="location"><br>
+
+                        <label for="experience">Experience:</label><br>
+                        <input type="text" style="width: 100%;" class="input" formControlName="experience"><br>
+
+                        <label for="salary">Salary:</label><br>
+                        <input type="text" style="width: 100%;" class="input" formControlName="salary"><br>
+
+                        <div style="margin-top: 2%;">
+                            <button mat-raised-button color="accent" type=" submit" [disabled]="!postForm.valid"
+                                style="margin: 1%;">Submit</button>
+                            <button mat-raised-button color="warn" type="reset" style="margin: 1%;">Reset</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- <div class="mt-5">
+                    <h2 class="text-center ">Add Gallery Image</h2>
+                    <form #imageForm="ngForm" (ngSubmit)="submitImage()" enctype="multipart/form-data">
+                        <input type="file" (change)="onFileChange($event)" accept="Image" required /><br>
+                        <div style="margin-top: 3%;">
+                            <button mat-raised-button color="accent" type="submit"
+                                [disabled]="!addMorePhotos">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="mt-5">
+                    <div *ngFor="let g of galleries" class="imgc mt-2 mb-2">
+                        <img [src]="host+g.postPhotoName" alt="Image" class="img" />
+                        <button mat-raised-button color="warn" class="dlb"
+                            (click)="openDeleteImage(g.gid)">Delete</button>
+
+                    </div>
+                </div> -->
+            </div>
+
+        </div>
+    </div>
+
+</div>
