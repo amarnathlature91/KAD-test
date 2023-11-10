@@ -13,7 +13,6 @@
     border-radius: 50%;
 }
 
-
 .templ {
     margin-top: 50px;
     margin-bottom: 30px;
@@ -31,6 +30,7 @@
     align-items: center;
     text-align: justify;
     color: white;
+    width: 50%;
 }
 
 .bt-img {
@@ -66,7 +66,6 @@
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
-
 .mission-ct {
     background-image: url('src\assets\images\aboutpage\mission.jpg');
     background-size: cover;
@@ -85,4 +84,95 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+
+    .bmi {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+
+    .templ {
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    .bf {
+        background: #fff;
+    }
+
+    .cold {
+        margin: 5%;
+    }
+
+    .bt-img {
+        width: 30px;
+        height: 30px;
+        margin: 3%;
+    }
+
+    .bt-tx {
+        margin: 1%;
+        font-size: smaller;
+    }
+
+    .bt-rw {
+        display: flex;
+        margin: 3%;
+        gap: 3%;
+    }
+
+    .bt-div {
+        width: 20vw;
+        height: 15vh;
+        background-color: #f0f0f0;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bt-div:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .ph-tex {
+        align-items: center;
+        text-align: justify;
+        color: white;
+        font-size: smaller;
+        width: 80%;
+        font-weight: bold;
+    }
+
+
+    .mission-ct {
+        background-image: url('src\assets\images\aboutpage\mission.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: fit-content;
+    }
+
+    .vision-ct {
+        background-image: url('src\assets\images\aboutpage\vision.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+    }
+
+    .values-ct {
+        background-image: url('src\assets\images\aboutpage\values.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+    }
 }

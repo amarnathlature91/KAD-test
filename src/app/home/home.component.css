@@ -47,7 +47,7 @@
 	width: auto;
 	background-color: #fff;
 	position: relative;
-	z-index: 1;
+	z-index: -1;
 }
 
 .overlap {
@@ -188,11 +188,11 @@
 	justify-content: center;
 	align-items: center;
 	font-size: large;
-	height: 55vh;
+	height: 60vh;
 }
 
 
-.socialcr {
+/* .socialcr {
 	background-image: url('src\assets\images\homepage\socialBg.jpg');
 	background-size: cover;
 	background-position: center;
@@ -221,7 +221,7 @@
 	.carousel-indicators {
 		display: none;
 	}
-}
+} */
 
 
 
@@ -286,7 +286,6 @@
 		width: auto;
 		background-color: #fff;
 		position: relative;
-		z-index: 1;
 	}
 
 	.overlap {
@@ -440,7 +439,7 @@
 		height: 45vh;
 	}
 
-	.socialcr {
+	/* .socialcr {
 		background-image: url('src\assets\images\homepage\socialBg.jpg');
 		background-size: cover;
 		background-position: center;
@@ -464,6 +463,6 @@
 		.carousel-indicators {
 			display: none;
 		}
-	}
+	} */
 
 }

@@ -2,12 +2,30 @@
 	background-image: url('src\assets\images\carrerspage\crBg.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-position: center;
+	align-items: center;
+	height: 100vh;
 }
 
-.p-text {
+.ct-rw {
+	margin: 10px;
+	padding: 20px;
+	align-items: center;
+	display: flex;
+}
+
+.p-text-d {
 	font-size: 1.4rem;
+	align-items: center;
 	padding-top: 10%;
 	padding-bottom: 10%;
+	display: block;
+
+}
+
+.p-text-m {
+	display: none;
+
 }
 
 .card {
@@ -34,9 +52,72 @@
 	top: 0;
 }
 
+.lg-cnt {
+	position: relative;
+	z-index: -1;
+}
+
 .lgbtn {
 	position: absolute;
 	right: 0;
 	top: 0;
+	z-index: -1;
+}
+
+@media (max-width: 768px) {
+
+	.lgbtn {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	.ct {
+		height: 25vh;
+		background-image: url('src\assets\images\carrerspage\crBg.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	.p-text-d {
+		display: none;
+	}
+
+	.p-text-m {
+		align-items: center;
+		display: block;
+	}
+
+	.p-tx-m {
+		font-size: 0.6rem;
+	}
+
+	.card {
+		padding: 3%;
+		height: auto;
+		width: 90vw;
+	}
+
+	.bullet {
+		width: 20%;
+		justify-content: center;
+		align-items: center;
+		display: grid;
+		color: black;
+		opacity: 0.5;
+	}
+
+	.apb {
+		width: fit-content;
+		background-color: #69b431;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+
+
+
 
 }

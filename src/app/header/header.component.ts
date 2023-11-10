@@ -7,7 +7,10 @@ import { Component, HostBinding, HostListener } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+  isSmallScreen: boolean = false;
   isScrolled = false;
+  isCollapsed = true;
+
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
@@ -16,6 +19,20 @@ export class HeaderComponent {
     } else {
       this.isScrolled = false;
     }
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    this.checkScreenSize();
+  }
+
+  checkScreenSize() {
+    this.isSmallScreen = window.innerWidth < 768; // Define your breakpoint here
+  }
+
+
+  toggleNavbar() {
+    this.isCollapsed = !this.isCollapsed;
   }
 
 }

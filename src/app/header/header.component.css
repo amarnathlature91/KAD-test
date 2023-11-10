@@ -52,10 +52,6 @@ textarea {
     font-size: 1.5em;
 }
 
-.main {
-    font-weight: bolder;
-    font-family: Abril Fatface;
-}
 
 .nav-item {
     margin: 1rem;
@@ -66,21 +62,20 @@ textarea {
     transition: all 0.3s ease;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    align-items: end;
-    justify-content: center;
+
+.nav-cnt {
+    display: flex;
+    justify-content: last baseline;
 }
 
-.grid-item-nav {
-    margin-top: 3%;
+.navbar-brand {
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
-.grid-item-logo {
-    margin-bottom: 5%;
-}
+
+
+
 
 @media (max-width: 767px) {
 
@@ -102,34 +97,26 @@ textarea {
         width: 100%;
     }
 
-
-    .grid {
-        display: flex;
-        gap: 0;
-    }
-
-    .grid-item-logo {
-        width: 40px;
-    }
-
-    .grid-item-nav {
-        width: 70vw;
+    .navbar-toggler {
+        right: 0;
+        left: 80;
     }
 
     .navbar-nav {
-        width: 10px;
-        display: flex;
+        background-color: white;
+        display: block;
         justify-items: center;
-        flex-direction: row;
+        z-index: 9999;
     }
 
     .nav-item {
-        width: 20px;
         font-size: 10px;
+        width: auto;
     }
 
     .nav-link {
-        width: 20px;
+        width: auto;
     }
+
 
 }

@@ -1,5 +1,5 @@
 <div class="global-fade-in">
-    <div class="container mt-5 mb-5" style="position: relative;">
+    <div class="container lg-cnt mt-5 mb-5" style="position: relative;">
         <h1><b class="headings">Join Our Team: Ignite Your Career</b></h1>
         <div class=" lgbtn">
             <a href="/login" *ngIf="!isLoggedin()" mat-raised-button style="margin: 20px;">Login</a>
@@ -10,24 +10,30 @@
         </div>
     </div>
     <div class="ct">
-        <div class="row" style="margin: 10px;padding: 20px;">
+        <div class="row ct-rw">
             <div class="col-6">
             </div>
-            <div class="col-6 body p-text" style="text-align: justify;">
-                <p>
-                    <b style="color: white;">
+            <div class="col-6 body p-text-d" style="text-align: justify;">
+                <p><b style="color: white;">
                         Are you passionate about data management and driven by innovation? KAD e-tech welcomes
                         individuals who are eager to contribute to our mission of redefining data management in a
                         dynamic and challenging landscape.
                     </b>
                 </p>
-                <p>
-                    <b style="color: white;">
+                <p><b style="color: white;">
                         We're always on the lookout for exceptional talent who can add their unique perspectives
                         and expertise to our team. Explore our current job openings and take the first step toward an
                         exciting career journey with us. Your potential knows no bounds at KAD e-tech.
                     </b>
-
+                </p>
+            </div>
+            <div class="col-6 body p-text-m" style="text-align: justify;">
+                <p class="p-tx-m">
+                    <b>
+                        Are you passionate about data management and innovation? Join KAD e-tech to redefine data in a
+                        dynamic landscape. We seek talent eager to contribute, offering diverse perspectives. Explore
+                        our job openings for an exciting journey where potential knows no bounds.
+                    </b>
                 </p>
             </div>
         </div>
@@ -42,7 +48,7 @@
                         <h4 class="headings" style="width: auto;"><b>{{p.jobTitle}}</b></h4>
                         <button mat-raised-button class="apb" (click)="openApply(p.jobTitle)">Apply</button>
                     </div>
-                    <p class="body">{{p.description}}</p>
+                    <p class="body" style="margin: 5%;">{{p.description}}</p>
                     <div class="row">
                         <div class="col-md-3 bullet body">
                             <i class="fa fa-map-marker"><b>{{' '+p.location}}</b></i>
